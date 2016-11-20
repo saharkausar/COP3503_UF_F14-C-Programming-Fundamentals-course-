@@ -1,3 +1,22 @@
+/*
+ Created by: Sahar Kausar
+ COP3503 Assignment #3 Calculator (Stacks, String Processing, Input Parsing)
+ Fall 2014
+ Section: 8228
+ */
+
+/**
+This program is a simple calculator written in C++. The operations that the calculator is expected to take care of ranges 
+from simple operations, e.g., addition and multiplications, to more complicated operations, e.g., sinus and logarithm.
+The code inputs a string from a user, which contains the expression he/she wants to compute. 
+The code then parses the input, detects the operators and their argument(s), and returns the result. 
+For simplicity, you can assume that the input expression is fully parenthesized. 
+The stack data structure is used to pass arguments and compute the result.
+With this assignment, allows practice with the stack implementation which is one of the most widely used data structures. 
+Besides becoming familiar with string processing and input parsing, which are of crucial importance in most C++ projects.
+
+**/
+
 #include <iostream> 
 #include <string>
 #include <cmath>
