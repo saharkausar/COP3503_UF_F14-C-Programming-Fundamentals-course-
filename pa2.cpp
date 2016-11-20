@@ -7,9 +7,14 @@
 
 /**
 
-C++ program that emulates the operating system’s responsibility of allocating memory to certain programs. This is a simple page-based view of memory management. On startup, the program has some 32 pages of contiguous, unused memory. Each page is 4 KB long.
-It then allow the users to “run” programs that require chunks of this memory for some period of time. It also allows the users to “kill” programs (i.e., “Ctrl-c” or “kill -9” in most OSs) that are in progress. The pages used by programs that are killed can then be re-used for future programs.
-The purpose of this project is two-fold. First, getting practice with linked lists and pointers. Secondly, critically examining the results of different algorithms of allocating memory on the “fragmentation” of the memory.
+C++ program that emulates the operating system’s responsibility of allocating memory to certain programs. 
+This is a simple page-based view of memory management. On startup, the program has some 32 pages of contiguous, unused memory. 
+Each page is 4 KB long.
+It then allow the users to “run” programs that require chunks of this memory for some period of time. 
+It also allows the users to “kill” programs (i.e., “Ctrl-c” or “kill -9” in most OSs) that are in progress. 
+The pages used by programs that are killed can then be re-used for future programs.
+The purpose of this project is two-fold. First, getting practice with linked lists and pointers. 
+Secondly, critically examining the results of different algorithms of allocating memory on the “fragmentation” of the memory.
 
 **/
 
