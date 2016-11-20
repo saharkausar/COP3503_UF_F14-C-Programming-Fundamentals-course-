@@ -1,6 +1,7 @@
 /*
- Created by: Sahar Hussain
+ Created by: Sahar Kausar
  COP3503 Assignment #1 Magic Square
+ Fall 2014
  Section: 8228
  */
 
