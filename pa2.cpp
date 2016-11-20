@@ -19,8 +19,6 @@ Secondly, critically examining the results of different algorithms of allocating
 **/
 
 
-
-
 #include <iostream> 
 #include <iomanip>
 #include <string>
