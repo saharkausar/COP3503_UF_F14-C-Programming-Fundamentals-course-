@@ -1,17 +1,49 @@
 /*
- Created by: Sahar Kausar
- COP3503 Assignment #1 Magic Square
- Fall 2014
- Section: 8228
- */
+ Created by Sahar Kausar (Fall 2014 COP3503 - Introduction to Programming Fundamentals 2 with C++)
+ Please do not copy or redistribute without permission.
+ 
+ Assignment: Magic Square
+*/
 
 /**
-
+What the program does:
+ 
 This C++ program creates an N*N magic square, 
 i.e., a square arrangement of the numbers 1, 2, , , in which the sum of rows, columns, and diagonals are the same. 
 The user will specify the size of the square matrix: N. The value N must be an odd number between 3 and 15.
 
+ 
+Example Run:
+ 
+ For example, the program is expected to run in the following way:
+ INPUT>> Enter the size of a magic square: 5
+ OUTPUT>> One magic square is:
+ 17 24 1 8 15
+ 23 5 7 14 16
+ 4 6 13 20 22
+ 10 12 19 21 3
+ 11 18 25 2 9
+ OUTPUT>> Checking the sums of every row: 65 65 65 65 65
+ OUTPUT>> Checking the sums of every column: 65 65 65 65 65
+ OUTPUT>> Checking the sums of every diagnoal: 65 65
+ 
 **/
+
+/**
+How to Compile and Execute:
+ 
+Download the file to your desired root folder on your computer. Open the terminal or executable IDE program to compile and run the file. Enter the following in the quotes (make sure to omit the quotes): "g++ -o (desiredNameOfFile) pa1.cpp"
+ 
+For example, you may enter the following: "g++ -o pa1 pa1.cpp"
+ 
+The program will then compile. Run the program by typing "./(desiredNameOfFile)"
+ 
+In the above example, you may have entered: "./pa1" 
+ 
+The program will then run and the user may follow the prompt. Enjoy!
+ 
+**/
+
 
 #include <iostream>
 

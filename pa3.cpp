@@ -1,11 +1,14 @@
 /*
- Created by: Sahar Kausar
- COP3503 Assignment #3 Calculator (Stacks, String Processing, Input Parsing)
- Fall 2014
- Section: 8228
+ Created by Sahar Kausar (Fall 2014 COP3503 - Introduction to Programming Fundamentals 2 with C++)
+ Please do not copy or redistribute without permission.
+ 
+ Assignment: Calculator (Stacks, String Processing, Input Parsing)
  */
 
 /**
+
+What the program does:
+ 
 This program is a simple calculator written in C++. The operations that the calculator is expected to take care of ranges 
 from simple operations, e.g., addition and multiplications, to more complicated operations, e.g., sinus and logarithm.
 The code inputs a string from a user, which contains the expression he/she wants to compute. 
@@ -15,7 +18,50 @@ The stack data structure is used to pass arguments and compute the result.
 With this assignment, allows practice with the stack implementation which is one of the most widely used data structures. 
 Besides becoming familiar with string processing and input parsing, which are of crucial importance in most C++ projects.
 
+
+Example Run:
+ 
+ > ./pa3.out
+ Please enter the expression:
+ ((6 + (4 * 12))/6)
+ The result is: 9
+ -------------------------------------------
+ > ./pa3.out
+ Please enter the expression:
+ ((2*sin(30)) + cos(60))
+ The result is: 1.5
+ -------------------------------------------
+ > ./pa3.out
+ Please enter the expression:
+ (sqrt(16) + (3^2))
+ The result is: 13
+ -------------------------------------------
+ > ./pa3.out
+ Please enter the expression:
+ ((2*sin(30) + (2-4))
+ Error: Unbalanced parenthesis!!!
+ -------------------------------------------
+ > ./pa3.out
+ Please enter the expression:
+ (7*8)/(1-sin(90))
+ Error: Division by zero!!!
+ 
 **/
+
+/**
+ How to Compile and Execute:
+ 
+ Download the file to your desired root folder on your computer. Open the terminal or executable IDE program to compile and run the file. Enter the following in the quotes (make sure to omit the quotes): "g++ -o (desiredNameOfFile) pa3.cpp"
+ 
+ For example, you may enter the following: "g++ -o pa3 pa3.cpp"
+ 
+ The program will then compile. Run the program by typing "./(desiredNameOfFile)"
+ 
+ In the above example, you may have entered: "./pa3"
+ 
+ The program will then run and the user may follow the prompt. Enjoy!
+ 
+ **/
 
 #include <iostream> 
 #include <string>

@@ -1,22 +1,92 @@
 /*
- Created by: Sahar Kausar
- COP3503 Assignment #2 Linked Lists / Fragmentation
- Fall 2014
- Section: 8228
+ Created by Sahar Kausar (Fall 2014 COP3503 - Introduction to Programming Fundamentals 2 with C++)
+ Please do not copy or redistribute without permission.
+ 
+ Assignment: Linked List / Memory Management (Fragmentation)
  */
 
 /**
-
-C++ program that emulates the operating system’s responsibility of allocating memory to certain programs. 
-This is a simple page-based view of memory management. On startup, the program has some 32 pages of contiguous, unused memory. 
-Each page is 4 KB long.
-It then allow the users to “run” programs that require chunks of this memory for some period of time. 
-It also allows the users to “kill” programs (i.e., “Ctrl-c” or “kill -9” in most OSs) that are in progress. 
+What the program does:
+ 
+This is a C++ program that emulates the operating system’s responsibility of allocating memory to certain programs. This is a simple page-based view of memory management. On startup, the program has some 32 pages of contiguous, unused memory. Each page is 4 KB long.
+It then allow the users to “run” programs that require chunks of this memory for some period of time.
+It also allows the users to “kill” programs (i.e., “Ctrl-c” or “kill -9” in most OSs) that are in progress.
 The pages used by programs that are killed can then be re-used for future programs.
-The purpose of this project is two-fold. First, getting practice with linked lists and pointers. 
+The purpose of this project is two-fold. First, getting practice with linked lists and pointers.
 Secondly, critically examining the results of different algorithms of allocating memory on the “fragmentation” of the memory.
+ 
+ Example Run:
+ 
+ > ./a.out worst
+ Using worst fit algorithm
+ 1. Add program
+ 2. Kill program
+ 3. Fragmentation
+ 4. Print memory
+ 5. Exit
+ choice - 1
+ Program name - P1
+ Program size (KB) - 8
+ Program P1 added successfully: 2 page(s) used.
+ choice - 1
+ Program name - P2
+ Program size (KB) - 7
+ Program P2 added successfully: 2 page(s) used.
+ choice - 1
+ Program name - P3
+ Program size (KB) - 9
+ Program P3 added successfully: 3 page(s) used.
+ choice - 3
+ There are 1 fragment(s).
+ choice - 4
+ P1 P1 P2 P2 P3 P3 P3 Free
+ Free Free Free Free Free Free Free Free
+ Free Free Free Free Free Free Free Free
+ Free Free Free Free Free Free Free Free
+ choice - 2
+ Program name - P2
+ Program P2 successfully killed, 2 page(s) reclaimed.
+ choice - 3
+ There are 2 fragment(s).
+ choice - 4
+ P1 P1 Free Free P3 P3 P3 Free
+ Free Free Free Free Free Free Free Free
+ Free Free Free Free Free Free Free Free
+ Free Free Free Free Free Free Free Free
+ choice - 1
+ Program name - P4
+ Program size (KB) - 3
+ Program P4 added successfully, 1 page(s) used.
+ choice - 4
+ P1 P1 Free Free P3 P3 P3 P4
+ Free Free Free Free Free Free Free Free
+ Free Free Free Free Free Free Free Free
+ Free Free Free Free Free Free Free Free
+ choice - 1
+ Program Name - P1
+ Program Size (KB) - 5
+ Error, Program P1 already running.
+ choice - 1
+ Program name - P5
+ Program size (KB) - 1000000
+ Error, Not enough memory for Program P5
+ choice - 5
+ **/
 
-**/
+/**
+ How to Compile and Execute:
+ 
+ Download the file to your desired root folder on your computer. Open the terminal or executable IDE program to compile and run the file. Enter the following in the quotes (make sure to omit the quotes): "g++ -o (desiredNameOfFile) pa2.cpp"
+ 
+ For example, you may enter the following: "g++ -o pa2 pa2.cpp"
+ 
+ The program will then compile. Run the program by typing "./(desiredNameOfFile)"
+ 
+ In the above example, you may have entered: "./pa2"
+ 
+ The program will then run and the user may follow the prompt. Enjoy!
+ 
+ **/
 
 
 #include <iostream> 
